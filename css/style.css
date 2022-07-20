@@ -16,11 +16,17 @@ body {
     align-items: center;
     border-radius: 25px;
     margin-top: 56px;
-    animation: bg-change 10s infinite;
+    animation: bg-change 10s;
+    
 }
 @keyframes bg-change {
-    from {background-color: slategray;}
-    to {background-color: black;}
+    0% {background-color: slategray;
+        transform: rotate(0deg);}
+    50% {background-color: black;
+        transform: rotate(20deg);}
+        100% {background-color: black;
+            transform: rotate(0deg);}
+
   }
 .banner-info{
     width: 50%;
@@ -60,7 +66,7 @@ body {
     width: 90%;
     padding-left: 25px;
     margin-top: 33px;
-    animation:img-zoom-in-out 3s 3s;
+    animation:img-zoom-in-out 10s;
 }
 @keyframes img-zoom-in-out {
     0% { transform: scale(1,1)}
